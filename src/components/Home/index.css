@@ -63,7 +63,7 @@
   cursor: pointer;
 }
 
-.no-videos{
+.no-videos {
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -72,11 +72,11 @@
   font-family: roboto;
 }
 
-.no-videos img{
+.no-videos img {
   height: 200px;
 }
 
-.no-videos h1{
+.no-videos h1 {
   font-size: 16px;
   margin-top: 20px;
 }
