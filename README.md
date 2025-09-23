@@ -1,9 +1,9 @@
 
-# Nxt Trendz – E-Commerce Application
+# Nxt Watch – Youtube Clone Application
 
 Nxt Watch is a YouTube-inspired video platform built with React.js. It allows users to browse video categories (Trending, Gaming, Saved), search for content, toggle between light/dark modes, and securely log in using JWT Authentication.
 
-🔗 **Live Demo**: [Nxt Trendz E-Commerce App](https://ashwinytclone.ccbp.tech/)
+🔗 **Live Demo**: [Nxt Watch – Youtube Clone Application](https://ashwinytclone.ccbp.tech/)
 👉 Test Credentials:
 
 * Username: `rahul`
