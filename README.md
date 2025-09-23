@@ -80,7 +80,7 @@ Nxt-Watch/
 ## 📌 Deployment
 
 The project is deployed using **CCBP Tech hosting**.
-Live app: [https://ashwinnxtrendz.ccbp.tech/login](https://ashwinytclone.ccbp.tech/)
+Live app: [https://ashwinytclone.ccbp.tech/login](https://ashwinytclone.ccbp.tech/)
 
 ---
 
