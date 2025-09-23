@@ -1,49 +1,47 @@
-Nxt Watch
-Nxt Watch is a YouTube-inspired video platform built using React.js, designed to showcase video listings across multiple categories such as Trending, Gaming, and Saved Videos. It allows users to search for specific video content, toggle between light/dark themes, and securely access videos through authentication and authorization.
+🚀 Nxt Watch
+Nxt Watch is a YouTube-inspired video platform built with React.js. It allows users to browse video categories (Trending, Gaming, Saved), search for content, toggle between light/dark modes, and securely log in using JWT Authentication.
 
-Features
-JWT Authentication & Authorization
+✨ Features
+🔐 Authentication & Authorization
 
-Secure login with username and password.
+Secure login with username/password.
 
-JWT token used to authenticate API calls.
+JWT Tokens for API authentication.
 
-Login state is maintained using local storage.
+Login session preserved via Local Storage.
 
-Routing & Protected Routes
+📍 Protected Routing
 
-Navigation through pages like Login, Home, Trending, Gaming, and Saved Videos.
+Built with React Router.
 
-Unauthorized users are redirected to the login page.
+Redirects unauthenticated users to the Login Page.
 
-Responsive UI with React Components
+🎨 Responsive UI
 
-Customized UI built using React, CSS, and Bootstrap.
+Built with React Components, CSS, and Bootstrap.
 
-Dynamic theme support (light/dark mode).
+Supports Dark/Light Mode themes.
 
-Event handlers and reusable components for smooth interaction.
+Interactive event handlers & reusable UI.
 
-Video Listings & Search
+📹 Video Categories & Search
 
-Browse videos by category (Trending, Gaming, Saved).
+Explore Trending, Gaming, Saved Videos.
 
-Search bar to filter videos by keywords.
+Search functionality to filter videos dynamically.
 
-Tech Stack
+🛠️ Tech Stack
 Frontend: React.js, JavaScript, CSS, Bootstrap
-
-State Management: React useState, useEffect
-
-API Calls: REST API Integration
 
 Routing: React Router
 
-Storage: Local Storage for user session management
+API Integration: REST APIs
 
-Auth: JWT Token-based authentication and authorization
+Auth & Storage: JWT Token, Local Storage
 
-Project Structure
+State Management: React Hooks (useState, useEffect)
+
+📂 Project Structure
 text
 Nxt-Watch/
 │── public/                 # Static files
@@ -55,45 +53,31 @@ Nxt-Watch/
 │   └── index.js            # Entry point
 │── package.json            # Project dependencies
 │── README.md               # Project documentation
-Installation & Setup
-Clone the repo
+⚡ Getting Started
+Follow these steps to run the project locally:
 
+1️⃣ Clone the Repository
 bash
-git clone https://github.com/Ashwin-ax/Youtube-Clone-.git
-Navigate to project folder
-
+git clone https://github.com/YourUsername/Nxt-Watch.git
+2️⃣ Navigate to the Project Directory
 bash
-cd Youtube-Clone-
-Install dependencies
-
+cd Nxt-Watch
+3️⃣ Install Dependencies
 bash
 npm install
-Start the development server
-
+4️⃣ Start the Development Server
 bash
 npm start
-Open http://localhost:3000 in your browser.
+Now open 👉 http://localhost:3000 in your browser.
 
-Usage
-Login using credentials provided by backend API.
+🎮 Usage Guide
+Login with credentials from backend API.
 
-Browse videos in categories: Trending, Gaming, Saved.
+Browse videos under Trending, Gaming, Saved sections.
 
-Search for videos.
+Search for specific videos.
 
-Toggle theme between light/dark.
+Save videos for later.
 
-Save videos for later access.
-
-Screenshots
-(Add project screenshots here once available, e.g. Login Page, Home, Trending, etc.)
-
-Future Enhancements
-Add video detail pages with comments.
-
-Integrate real-time video streaming.
-
-User profile and preferences management.
-
-Advanced filters and recommendations.
+Switch between Dark/Light themes.
 
