@@ -1,0 +1,26 @@
+.menu-button-name {
+  font-size: 14px;
+  font-weight: 540;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.menu-links {
+  text-decoration: none;
+}
+
+.menu-icons {
+  font-size: 20px;
+  margin-left: 15px;
+  margin-bottom: 4px;
+}
+
+.menu-icons-active {
+  color: red;
+}
+
+.highlighted-menu-button-name{
+  font-weight: bold;
+}

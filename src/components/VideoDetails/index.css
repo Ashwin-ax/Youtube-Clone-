@@ -1,0 +1,15 @@
+.lds-icons {
+  margin-right: 6px;
+}
+
+hr {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.loader-container-vd{
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

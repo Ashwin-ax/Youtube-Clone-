@@ -1,0 +1,16 @@
+.all-videos-details {
+  display: flex;
+}
+
+.all-videos-date-view-container {
+  display: flex;
+}
+
+.all-videos-views {
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.all-videos-date {
+  font-size: 10px;
+}

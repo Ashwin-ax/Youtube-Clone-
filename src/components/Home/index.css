@@ -1,0 +1,87 @@
+.bg-container {
+  display: flex;
+}
+
+.close-btn {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: 0;
+}
+
+.close-icon {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.search-icon {
+  font-size: 18px;
+}
+
+.loader-container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.failure-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.failure-view-img {
+  height: 300px;
+  margin-right: 50px;
+}
+
+.failure-view-heading {
+  font-size: 20px;
+}
+
+.failure-view-description {
+  font-size: 14px;
+  color: #909090;
+  margin: 0;
+  padding: 0;
+}
+
+.retry {
+  background-color: #00306e;
+  color: #ffffff;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.no-videos{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+}
+
+.no-videos img{
+  height: 200px;
+}
+
+.no-videos h1{
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.no-videos p {
+  font-size: 14px;
+  margin: 0;
+}

@@ -1,0 +1,21 @@
+.no-saved-videos {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-saved-videos h1 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.no-saved-videos p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.no-saved-videos img {
+  height: 400px;
+}
