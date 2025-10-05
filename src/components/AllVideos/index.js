@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import {formatDistanceToNow} from 'date-fns'
 import {Main, Thumbnail, Profile, Title, Name} from './StyledComponents'
 import ThemeContext from '../../context/ThemeContext'
 
@@ -10,6 +11,10 @@ const AllVideos = props => (
       const {isDarkTheme} = value
       const {data} = props
       const {channel, id, title, publishedAt, thumbnailUrl, viewCount} = data
+      let date = formatDistanceToNow(new Date(publishedAt))
+      if (date.includes(' ')) {
+        date = date.split(' ').slice(1).join(' ')
+      }
       const {name, profileImageUrl} = channel
       return (
         <Main isDark={isDarkTheme}>
