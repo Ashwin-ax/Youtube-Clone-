@@ -1,3 +1,4 @@
+import {formatDistanceToNow} from 'date-fns'
 import ThemeContext from '../../context/ThemeContext'
 import {
   Main,
@@ -15,6 +16,10 @@ const TrendingVideo = props => (
       const {data} = props
       console.log(data)
       const {channel, publishedAt, thumbnailUrl, title, viewCount} = data
+      let date = formatDistanceToNow(new Date(publishedAt))
+      if (date.includes(' ')) {
+        date = date.split(' ').slice(1).join(' ')
+      }
       const {name} = channel
       return (
         <Main>
@@ -28,7 +33,7 @@ const TrendingVideo = props => (
               <Name isDark={isDarkTheme} mr="15">
                 {viewCount} views
               </Name>
-              <Name isDark={isDarkTheme}>{publishedAt}</Name>
+              <Name isDark={isDarkTheme}>{date} ago</Name>
             </ViewDataContainer>
           </Info>
         </Main>
