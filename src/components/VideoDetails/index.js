@@ -2,6 +2,7 @@ import {Component} from 'react'
 import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
+import {formatDistanceToNow} from 'date-fns'
 import ReactPlayer from 'react-player'
 import {GoThumbsup, GoThumbsdown} from 'react-icons/go'
 import {BiListPlus} from 'react-icons/bi'
@@ -95,14 +96,12 @@ class VideoDetails extends Component {
 
   renderVideosDetailsPage = (isDarkTheme, addToSavedVideos) => {
     const {videoDetailedData} = this.state
-    const {
-      publishedAt,
-      viewCount,
-      title,
-      description,
-      videoUrl,
-      channel,
-    } = videoDetailedData
+    const {publishedAt, viewCount, title, description, videoUrl, channel} =
+      videoDetailedData
+    let date = formatDistanceToNow(new Date(publishedAt))
+    if (date.includes(' ')) {
+      date = date.split(' ').slice(1).join(' ')
+    }
     const onClickSave = () => {
       addToSavedVideos(videoDetailedData)
     }
@@ -115,7 +114,7 @@ class VideoDetails extends Component {
         <DetailsContainer isDark={isDarkTheme}>
           <ButtonsAlignment>
             <Para isDark={isDarkTheme}>{viewCount} views</Para>
-            <Para isDark={isDarkTheme}>{publishedAt}</Para>
+            <Para isDark={isDarkTheme}>{date} ago</Para>
           </ButtonsAlignment>
           <ButtonsAlignment>
             <Buttons isDark={isDarkTheme}>
@@ -167,13 +166,13 @@ class VideoDetails extends Component {
     </div>
   )
 
-  renderSelectionPage = isDarkTheme => {
+  renderSelectionPage = (isDarkTheme, addToSavedVideos) => {
     const {activeState} = this.state
     switch (activeState) {
       case activeStateConstant.inProgress:
         return this.renderLoadingView(isDarkTheme)
       case activeStateConstant.success:
-        return this.renderVideosDetailsPage(isDarkTheme)
+        return this.renderVideosDetailsPage(isDarkTheme, addToSavedVideos)
       case activeStateConstant.failure:
         return this.renderFailureView()
       default:
