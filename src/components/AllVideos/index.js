@@ -31,7 +31,7 @@ const AllVideos = props => (
                   <Name isDark={isDarkTheme} mr="10">
                     {viewCount} views
                   </Name>
-                  <Name isDark={isDarkTheme}>{publishedAt}</Name>
+                  <Name isDark={isDarkTheme}>{date} ago</Name>
                 </div>
               </div>
             </div>
