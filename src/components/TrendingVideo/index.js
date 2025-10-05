@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom'
+import {formatDistanceToNow} from 'date-fns'
 import ThemeContext from '../../context/ThemeContext'
 import {
   Main,
@@ -15,6 +16,10 @@ const TrendingVideo = props => (
       const {isDarkTheme} = value
       const {data} = props
       const {id, channel, publishedAt, thumbnailUrl, title, viewCount} = data
+      let date = formatDistanceToNow(new Date(publishedAt))
+      if (date.includes(' ')) {
+        date = date.split(' ').slice(1).join(' ')
+      }
       const {name} = channel
       return (
         <Link to={`/videos/${id}`} className="menu-links">
@@ -29,7 +34,7 @@ const TrendingVideo = props => (
                 <Name isDark={isDarkTheme} mr="15">
                   {viewCount} views
                 </Name>
-                <Name isDark={isDarkTheme}>{publishedAt}</Name>
+                <Name isDark={isDarkTheme}>{date} ago</Name>
               </ViewDataContainer>
             </Info>
           </Main>
